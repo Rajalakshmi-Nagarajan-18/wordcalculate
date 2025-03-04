@@ -1,0 +1,41 @@
+html, body{
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    background-color: #f5e8ba;
+}
+
+#wrapper div, #wrapper h2 , #message{
+    display: flex;
+    justify-content: center;
+}
+
+textarea{
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-top: 30px;
+    height: 300px;
+    width: 300px;
+    padding-left: 10px;
+}
+
+button{
+    margin-top: 20px;
+    background-color: rgb(127, 127, 223);
+    border-radius: 4px;
+    height: 44px;
+    font-weight: 600;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    border: none;
+    color: #102770;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#result{
+    color: black;
+    margin-top: 20px;
+    font-size: 32px;
+}

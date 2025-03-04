@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="message">Calculate Words</h1>
+    <div id="wrapper">
+        <h2>Type a Sentence</h2>
+        <div id="textarea" >
+            <textarea id="text" type="textarea" placeholder="Something text here"></textarea>
+        </div>
+        <div>
+            <button type="submit" onclick="calculate()">Calculate Words</button>
+        </div>
+        <div id="result">
+
+        </div>
+    </div>
+
+    <script>
+        function calculate(){
+       let words = document.getElementById("text").value
+        let cal = words.split('').length
+        let result = document.getElementById("result")
+        result.innerHTML= cal + " words"
+        }
+    </script> 
+    
+</body>
+</html>
